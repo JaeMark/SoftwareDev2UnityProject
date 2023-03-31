@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Health : MonoBehaviour
 {
     public int maxHealth = 100;
-    public int currentHealth;   
+    public int currentHealth;
+
+    public event Action<int> OnHealthChanged;
 
     void Start()
     {
@@ -18,6 +21,8 @@ public class Health : MonoBehaviour
         Debug.Log("Player has taken " + damageAmount + " damage");
         Debug.Log("Player health: " + currentHealth);
 
+        OnHealthChanged?.Invoke(currentHealth);
+
         if (currentHealth <= 0)
         {
             Die(); 
@@ -28,5 +33,4 @@ public class Health : MonoBehaviour
     {
         Debug.Log("Player has died.");
     }
-
 }

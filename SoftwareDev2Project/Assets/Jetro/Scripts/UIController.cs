@@ -9,20 +9,36 @@ public class UIController : MonoBehaviour
     public Slider healthBar;
     public TMP_Text score;
 
+    private int playerScore;
+
+    private Health playerHealth;
+    private GameMode gameMode;
 
     // Start is called before the first frame update
     void Start()
     {
+        // get player health component
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
+
+        healthBar.maxValue = playerHealth.maxHealth;
+        healthBar.value = playerHealth.currentHealth;
+
+        playerHealth.OnHealthChanged += UpdateHealthBar;
+
         // set initial score to 0
         score.text = 0.ToString();
 
-        healthBar.maxValue = 100;
-        healthBar.value = 10;
+        gameMode.OnScoreChanged += UpdateScore;
     }
 
-    // Update is called once per frame
-    void Update()
+    void UpdateHealthBar(int health)
     {
-        
+        healthBar.value = health;
+    }
+
+    void UpdateScore(int score)
+    {
+        playerScore = score;
+        score.text = playerScore.ToString();
     }
 }

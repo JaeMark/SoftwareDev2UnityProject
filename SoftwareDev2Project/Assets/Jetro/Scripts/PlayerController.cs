@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInput : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public Vector2 inputVector; 
     public float moveSpeed = 10f; 

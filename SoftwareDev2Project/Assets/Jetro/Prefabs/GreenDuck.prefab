@@ -104,7 +104,7 @@ MonoBehaviour:
   movePath: {x: 0, y: 0}
   followTarget: {fileID: 0}
   activatedFollow: 1
-  moveSpeed: 2
+  moveSpeed: 1
   damageAmount: 10
 --- !u!50 &2425814837304152245
 Rigidbody2D:

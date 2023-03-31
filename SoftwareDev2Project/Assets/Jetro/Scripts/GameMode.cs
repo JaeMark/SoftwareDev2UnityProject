@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class GameMode : MonoBehaviour
 {
     public static GameMode instance;
+    public event Action<int> OnScoreChanged;
 
     private int playerScore = 0;
 
@@ -36,5 +38,7 @@ public class GameMode : MonoBehaviour
     {
         playerScore += score;
         Debug.Log("Player score: " + playerScore);
+
+        OnScoreChanged?.Invoke(playerScore);
     }
 }

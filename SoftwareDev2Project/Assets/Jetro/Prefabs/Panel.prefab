@@ -719,8 +719,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9ceee38fe511c4dba83ea5817d41f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  scoreText: {fileID: 0}
+  healthBar: {fileID: 6636808404698073388}
+  score: {fileID: 6636808405025191996}
 --- !u!1 &6636808405492369519
 GameObject:
   m_ObjectHideFlags: 0
