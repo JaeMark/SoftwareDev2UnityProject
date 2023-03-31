@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 405555632}
   - component: {fileID: 405555634}
   - component: {fileID: 405555635}
+  - component: {fileID: 405555636}
   m_Layer: 0
   m_Name: PlayerSprite
   m_TagString: Untagged
@@ -536,6 +537,23 @@ MonoBehaviour:
   - {fileID: 913623486, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
   - {fileID: -18030296, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
   - {fileID: 1201522528, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
+--- !u!114 &405555636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405555622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c01c815efd51a439ba40d74f77ffe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundaryMinX: -20
+  boundaryMaxX: 20
+  boundaryMinY: -20
+  boundaryMaxY: 20
+  score: 1
 --- !u!1 &930733166
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,7 +888,6 @@ GameObject:
   - component: {fileID: 1143186235}
   - component: {fileID: 1143186234}
   - component: {fileID: 1143186238}
-  - component: {fileID: 1143186239}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -916,7 +933,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4912c41e6733c3b44a10df004e69771c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 1143186238}
+  colorManager: {fileID: 0}
+  scoreManager: {fileID: 0}
 --- !u!212 &1143186236
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -997,23 +1015,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 1143186236}
---- !u!114 &1143186239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143186233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1428c70b8f155a04ba85cf5b140af7c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boundaryMinX: -20
-  boundaryMaxX: 20
-  boundaryMinY: -20
-  boundaryMaxY: 20
-  score: 1
 --- !u!1 &1313885076
 GameObject:
   m_ObjectHideFlags: 0

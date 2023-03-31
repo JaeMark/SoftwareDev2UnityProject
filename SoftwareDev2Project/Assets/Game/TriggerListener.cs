@@ -4,18 +4,25 @@ using UnityEngine;
 
 public class TriggerListener : MonoBehaviour
 {
-    public ColorManager manager;
+    public ColorManager colorManager;
+    public ScoreManager scoreManager;
 
     public void Start()
     {
-        manager = GetComponent<ColorManager>();
+        colorManager = GetComponent<ColorManager>();
+        scoreManager = GetComponent<ScoreManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (manager != null)
+        if (colorManager != null)
         {
-            manager.RandomizeColor();
+            colorManager.RandomizeColor();
+        }
+        if(scoreManager != null)
+        {
+            GameObject owner = collision.gameObject;
+            scoreManager.ScoreEvent(owner);
         }
     }
 }
