@@ -31,14 +31,14 @@ public class UIController : MonoBehaviour
         gameMode.OnScoreChanged += UpdateScore;
     }
 
-    void UpdateHealthBar(int health)
+    void UpdateHealthBar(int newHealth)
     {
-        healthBar.value = health;
+        healthBar.value = newHealth;
     }
 
-    void UpdateScore(int score)
+    void UpdateScore(int newScore)
     {
-        playerScore = score;
+        playerScore = newScore;
         score.text = playerScore.ToString();
     }
 }
