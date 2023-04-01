@@ -9,8 +9,6 @@ public class UIController : MonoBehaviour
     public Slider healthBar;
     public TMP_Text score;
 
-    private int playerScore;
-
     private Health playerHealth;
     private GameMode gameMode;
 
@@ -19,15 +17,16 @@ public class UIController : MonoBehaviour
     {
         // get player health component
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
-
+        // set default health bar
         healthBar.maxValue = playerHealth.maxHealth;
         healthBar.value = playerHealth.currentHealth;
 
+        // set default score to 0
+        score.text = "0";
+        // get game mode object
+        gameMode = GameObject.FindObjectOfType<GameMode>();
+
         playerHealth.OnHealthChanged += UpdateHealthBar;
-
-        // set initial score to 0
-        score.text = 0.ToString();
-
         gameMode.OnScoreChanged += UpdateScore;
     }
 
@@ -38,7 +37,11 @@ public class UIController : MonoBehaviour
 
     void UpdateScore(int newScore)
     {
-        playerScore = newScore;
+        int playerScore = newScore;
         score.text = playerScore.ToString();
     }
 }
+
+
+
+
