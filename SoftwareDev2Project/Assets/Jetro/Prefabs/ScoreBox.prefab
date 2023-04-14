@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c01c815efd51a439ba40d74f77ffe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundaryMinX: -20
-  boundaryMaxX: 20
-  boundaryMinY: -20
-  boundaryMaxY: 20
+  boundaryMinX: -10
+  boundaryMaxX: 10
+  boundaryMinY: -10
+  boundaryMaxY: 10
   score: 100

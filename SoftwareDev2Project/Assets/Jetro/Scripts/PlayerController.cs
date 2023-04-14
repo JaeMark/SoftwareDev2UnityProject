@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
             Vector2 normalizedInput = inputVector.normalized;
             Vector2 baseVector = new Vector2(normalizedInput.x * boostForceBase, normalizedInput.y * boostForceBase);
             Vector2 momentumVector = new Vector2(inputVector.x * boostForceMomentum, inputVector.y * boostForceMomentum);
-            rigid.AddForce((baseVector + momentumVector), ForceMode2D.Impulse);
+            rigid.AddForce((baseVector + momentumVector), ForceMode2D.Force);
         }
     }
 
