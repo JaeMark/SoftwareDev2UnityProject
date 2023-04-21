@@ -248,6 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1688193027}
   score: {fileID: 1998502163}
+  restartButton: {fileID: 1125052533}
 --- !u!1 &392828426
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +405,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fd64a97dc06a07489444f5ad65b8018, type: 3}
+--- !u!114 &1125052533 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2421949129048119048, guid: cbad50e1f7b85844c83fc5b6869aebe4, type: 3}
+  m_PrefabInstance: {fileID: 6636808405174763823}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1190443910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2148,6 +2160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a51ee25c707a98b43b679542d043814e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiController: {fileID: 305874894}
 --- !u!4 &1361894194
 Transform:
   m_ObjectHideFlags: 0
@@ -2736,7 +2749,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7701266578856411361, guid: 92d2f5d6953f930418865b46d1a15724, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 92d2f5d6953f930418865b46d1a15724, type: 3}
 --- !u!1001 &8771023340432070598
 PrefabInstance:

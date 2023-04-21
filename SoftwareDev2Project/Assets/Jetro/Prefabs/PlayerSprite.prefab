@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 7701266578856411363}
   - component: {fileID: 7701266578856411362}
   - component: {fileID: 7701266578856411360}
-  - component: {fileID: 7701266578856411361}
   m_Layer: 0
   m_Name: PlayerSprite
   m_TagString: Player
@@ -195,35 +194,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7701266578856411361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7701266578856411380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bc3dd2c3c3189d40a38e7e13539ef07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderer: {fileID: 7701266578856411384}
-  sprites:
-  - {fileID: -1101754803, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: -1933665658, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: 1209714400, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: -1578443010, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: 366752817, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: 1192167778, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: -1353425862, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: -1978663517, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: -1253607612, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: 747110761, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: -1229928801, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: 2047232360, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: -23059325, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: 523405444, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: -371558843, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: 913623486, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: -18030296, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}
-  - {fileID: 1201522528, guid: 1088acb560b003d4dba3c538282cbd8b, type: 3}

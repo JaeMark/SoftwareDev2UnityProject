@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4582334585849316733}
   - component: {fileID: 4582334585849316705}
   - component: {fileID: 4582334585849316704}
-  - component: {fileID: 4582334585849316710}
   - component: {fileID: 4582334585849316711}
   m_Layer: 0
   m_Name: YellowDuck
@@ -143,30 +142,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.07}
   serializedVersion: 2
   m_Radius: 0.1
---- !u!114 &4582334585849316710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4582334585849316732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bc3dd2c3c3189d40a38e7e13539ef07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderer: {fileID: 4582334585849316706}
-  sprites:
-  - {fileID: 1004422438, guid: b5f20f5aac604d045b2163b1075a0d95, type: 3}
-  - {fileID: 1013745748, guid: b5f20f5aac604d045b2163b1075a0d95, type: 3}
-  - {fileID: 11548808, guid: b5f20f5aac604d045b2163b1075a0d95, type: 3}
-  - {fileID: -512575483, guid: b5f20f5aac604d045b2163b1075a0d95, type: 3}
-  - {fileID: -1751200074, guid: b5f20f5aac604d045b2163b1075a0d95, type: 3}
-  - {fileID: 1150854554, guid: b5f20f5aac604d045b2163b1075a0d95, type: 3}
-  - {fileID: 1484942657, guid: b5f20f5aac604d045b2163b1075a0d95, type: 3}
-  - {fileID: -1573134852, guid: b5f20f5aac604d045b2163b1075a0d95, type: 3}
-  - {fileID: 1842295844, guid: b5f20f5aac604d045b2163b1075a0d95, type: 3}
-  - {fileID: 713527559, guid: b5f20f5aac604d045b2163b1075a0d95, type: 3}
 --- !u!95 &4582334585849316711
 Animator:
   serializedVersion: 5
