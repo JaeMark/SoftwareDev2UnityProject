@@ -8,6 +8,8 @@ public class GameMode : MonoBehaviour
     public static GameMode instance;
     public event Action<int> OnScoreChanged;
 
+    public UIController uiController;
+
     private int playerScore = 0;
 
     private void Awake()
@@ -40,5 +42,11 @@ public class GameMode : MonoBehaviour
         Debug.Log("Player score: " + playerScore);
 
         OnScoreChanged?.Invoke(playerScore);
+    }
+
+    public void GameOver()
+    {
+        Time.timeScale = 0;
+        uiController.ShowRestartButton();
     }
 }

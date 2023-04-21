@@ -10,9 +10,14 @@ public class Health : MonoBehaviour
 
     public event Action<int> OnHealthChanged;
 
+    private GameMode gameMode;
+
     void Start()
     {
-        currentHealth = maxHealth; 
+        currentHealth = maxHealth;
+
+        // get game mode object
+        gameMode = GameObject.FindObjectOfType<GameMode>();
     }
 
     public void TakeDamage(int damageAmount)
@@ -31,6 +36,6 @@ public class Health : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Player has died.");
+        gameMode.GameOver();
     }
 }
